@@ -1,13 +1,35 @@
 alert('Boas vindas ao jogo do número secreto');
-let numeroSecreto = parseInt(Math.random() * 100) + 1;
+let numeroSecreto;
+
+let dificuldade = prompt("Escolha sua dificuldade: 1 - fácil, 2 - médio ou 3 - difícil.")
+if ( dificuldade == 1){
+    numeroSecreto = parseInt(Math.random() * 10) + 1;
+} else if (dificuldade == 2){
+    numeroSecreto = parseInt(Math.random() * 100) + 1;
+} else {
+    numeroSecreto = parseInt(Math.random() * 1000) + 1;
+
+}
 console.log(numeroSecreto);
+console.log(dificuldade);
+
 let chute;
 let tentativas = 1;
+let alcance;
+
+if (dificuldade == 1){
+    alcance = "Escolha um número entre 1 e 10." 
+} else if (dificuldade == 2){
+    alcance = "Escolha um número entre 1 e 100."
+} else{
+    alcance = "Escolha um número entre 1 e 1000."
+}
+
 
 // enquanto chute não for igual ao numero secreto
 while (chute != numeroSecreto) {
-    chute = prompt('Escolha um número entre 1 e 100');
-    // se chute for igualao numero secreto
+    chute = prompt(alcance);
+    // se chute for igual ao numero secreto
     if (chute == numeroSecreto) {
         break;
     } else {
