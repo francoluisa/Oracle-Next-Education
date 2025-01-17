@@ -17,7 +17,16 @@ exibirTextoNaTela('p', 'Escolha um número entre 1 e 10')
 
 function verificarChute (){
     let chute = document.querySelector('input').value;
-    console.log(chute == numeroSecreto);
+    if (chute == numeroSecreto){
+        exibirTextoNaTela('h1', 'Acertou');
+        exibirTextoNaTela('p', 'Você acertou o número secerto!');
+    } else {
+        if (chute > numeroSecreto){
+            exibirTextoNaTela('p', 'Número é menor');
+        } else {    
+            exibirTextoNaTela('p', 'Número é maior');
+        }
+    }
 }
 
 function gerarNumeroAleatorio() {
