@@ -1,6 +1,9 @@
 alert("Boas vindas ao jogo do número secreto");
 let numeroSecreto;
 
+console.log(numeroSecreto);
+console.log(dificuldade);
+
 let dificuldade = prompt(
   "Escolha sua dificuldade: 1 - fácil, 2 - médio ou 3 - difícil."
 );
@@ -11,8 +14,6 @@ if (dificuldade == 1) {
 } else {
   numeroSecreto = parseInt(Math.random() * 1000) + 1;
 }
-console.log(numeroSecreto);
-console.log(dificuldade);
 
 let chute;
 let tentativas = 1;
