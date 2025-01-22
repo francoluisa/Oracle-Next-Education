@@ -1,50 +1,48 @@
-
-
-
-
-
-
 /* 1 */
 function imcCalculo (alturaM, pesoKg){
     let imc = pesoKg / (alturaM ** 2);
     return imc;
-
 }
 
 /* 2 */
-
-
-/* function fatorial (numero){
+function fatorial (numero){
     for (let fatorial = numero - 1; fatorial >= 1; fatorial--) {
         numero = numero * fatorial; 
     }    
     return numero;
-}*/
+}
 
 
 /* 3 */
-
 function dolarConvertido (real){
     let dolar = real * 4.8;
-    return dolar;
+    return dolar.toFixed(2);
 }
 
 /* 4 */
-
-
-function area (altura, largura) {
+function areaPerimetroRetangulo (altura, largura) {
     let area = largura * altura;
-    return area;
-}
-function perimetro (altura, largura){
     let perimetro = 2 * (altura + largura); 
-    return perimetro;
+    
+    console.log(`Área da sala: ${area} metros²`);
+    console.log(`Perímetro da sala: ${perimetro} metros`)
 }
 
-function areaPerimetro(altura,largura){
-    area(altura,largura);
-    perimetro(altura,largura);
-    return;
-}
 /* 5 */ 
+function areaPerimetroCirculo (raio){
+    let area = 3.14 * (raio ** 2);
+    let perimetro = 2 * 3.14 * raio;
+    console.log(`Área da sala: ${area} metros²`);
+    console.log(`Perímetro da sala: ${perimetro} metros`)    
+}
 
+/* 6 */
+function tabuada (numero){
+    let base = 1;
+    let tabuada;
+    while(base <= 10 ){
+        tabuada = numero * base;
+        base++;
+        console.log(`${numero} x ${base} = ${tabuada}`);
+    }
+}
