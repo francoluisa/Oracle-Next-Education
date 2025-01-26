@@ -1,7 +1,7 @@
 let listaGenerica = [];
 
 let linguagemDeProgramacao = ['JavaScript', 'C', 'C++', 'Kotlin', 'Python'];
-linguagemDeProgramação.push('Java', 'Ruby', 'GoLang');
+linguagemDeProgramacao.push('Java', 'Ruby', 'GoLang');
 
 let listaNomes = ['Ana','Bob','Ray'];
 console.log(listaNomes[0]);
